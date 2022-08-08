@@ -236,5 +236,115 @@ class MainActivity() : AppCompatActivity() {
         //print(" ")
         //println(instaHesap["instaİsim"] )
 
+        //Matematiksel İr-şlemler
+
+        println("-------Matematiksel İşlemler-------")
+
+
+        var sayi = 8
+        println(sayi)
+        sayi = sayi + 1
+        println(sayi)
+        sayi++
+        println(sayi)
+        sayi--
+        println(sayi)
+
+        var digerSayi = 10
+         println(digerSayi>sayi)
+
+        println(digerSayi > sayi && 2>3)
+        println(digerSayi>sayi || 2>3 )
+
+        println(8+7)
+        println(10-4)
+        println(20*5)
+        println(10/2)
+
+        println(10%2)
+        println(11%2)
+
+        //If Kontrolleri
+
+        println("-------If Kontrolleri-------")
+
+        val skor = 10
+
+        if (skor < 10){
+            println("Leveli Geçemedin")
+        }
+        else if (skor >= 10 && skor < 20) {
+            println("Leveli Orta Puğanla Geçtin")
+        }
+        else if (skor >=20 && skor < 30) {
+            println("Leveli yüksek Puğanla Geçtin (çok iyisin)")
+        }
+        else if (skor > 40){
+            println("leveli efsane bir puğanla geçtin -bu oyunu banada öğret-")
+        }
+
+        //When - Switch
+
+        println("-------When-------")
+
+        var notRakami = 0
+        var notStringi = ""
+
+
+        when(notRakami){
+            0-> notStringi ="geçersiz not"
+            1-> notStringi ="zayıf"
+            2-> notStringi ="kötü"
+            3-> notStringi ="orta"
+            4-> notStringi ="iyi"
+            5-> notStringi ="pek iyi"
+        }
+
+
+
+
+
+
+
+
+
+        /*
+        if (notRakami == 0){
+            notStringi="geçersiz"
+        }
+        else if (notRakami == 1){
+            notStringi="zayıf"
+        }
+        else if (notRakami == 2){
+            notStringi="kotü"
+        }
+        else if (notRakami == 3){
+            notStringi="orta"
+        }
+        else if (notRakami == 4){
+            notStringi="iyi"
+        }
+        else if(notRakami == 5){
+            notStringi="pek iyi"
+        }
+        */
+
+        //Döngüler
+
+        println("-------For Döngüsü-------")
+
+        val baskaBirDizi = arrayOf(5,10,15,20,25,30)
+        val q = baskaBirDizi[0] / 5 + 3
+        println(q)
+
+        for (num in baskaBirDizi){
+            println(num/5+3)
+        }
+
+        for (indeks in baskaBirDizi.indices){
+            println(baskaBirDizi[indeks]/5+3)
+        }
+
+
     }
 }
