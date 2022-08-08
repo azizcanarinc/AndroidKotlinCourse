@@ -207,6 +207,34 @@ class MainActivity() : AppCompatActivity() {
 
         digerSet.forEach{
         println(it)
+        }
+
+
+        //Map
+
+        println("-------Map--------")
+
+        //Anahtar Kelime - Değer (Key - Value Pairing)
+
+        val yemekDizisi = arrayOf("Elma","Et","Tavuk")
+        val kaloriDizisi = arrayOf(100,300,200)
+
+        println("${yemekDizisi[0]}'nın kalorisi : ${kaloriDizisi[0]}")
+
+        val yemekKalorisiMap = hashMapOf<String,Int>()
+        yemekKalorisiMap.put("Elma",100)
+        yemekKalorisiMap.put("Et",300)
+        yemekKalorisiMap.put("Tavuk",200)
+
+        println(yemekKalorisiMap.get("Et"))
+
+        val benimMapim = hashMapOf<String,String>()
+        benimMapim.put("ömer","değer")
+
+        //val instaHesap = hashMapOf<String,String>("instaİsim" to "@arincazizcan" , "uygulamaİsim" to "instagram")
+        //print(instaHesap["uygulamaİsim"] )
+        //print(" ")
+        //println(instaHesap["instaİsim"] )
+
     }
-}
 }
