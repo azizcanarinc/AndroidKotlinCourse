@@ -337,13 +337,28 @@ class MainActivity() : AppCompatActivity() {
         val q = baskaBirDizi[0] / 5 + 3
         println(q)
 
+        println("döngü başladı")
         for (num in baskaBirDizi){
             println(num/5+3)
         }
+        println("döngü bitti")
 
         for (indeks in baskaBirDizi.indices){
             println(baskaBirDizi[indeks]/5+3)
         }
+
+        for (b in 0..9){
+        println(b)
+        }
+        val benimDigerStringDizim= ArrayList<String>()
+
+        benimDigerStringDizim.add("Aziz")
+        benimDigerStringDizim.add("Arinç")
+
+        for (str in benimDigerStringDizim){
+            println(str)
+        }
+        benimDigerStringDizim.forEach()
 
 
     }
