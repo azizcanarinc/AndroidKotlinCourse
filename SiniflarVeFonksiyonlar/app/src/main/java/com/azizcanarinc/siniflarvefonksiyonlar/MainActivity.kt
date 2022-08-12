@@ -47,4 +47,25 @@ class MainActivity : AppCompatActivity() {
         val toplamaSonucu = toplama(10,50)
         textView.text="Sonuç : ${toplamaSonucu}"
     }*/
+    fun sinifCalismasi(){
+
+        var isim ="superman"
+        var meslek ="gazateci"
+        var yas = 50
+
+        var spiderManIsim="spiderman"
+        var spidermeslek="gazateci"
+        var spiderManyas = 20
+
+        var superman = SuperKahraman()
+        superman.isim="superman"
+        superman.meslek="gazateci"
+        superman.yas= 50
+
+        var batman = SuperKahraman()
+        batman.isim="superman"
+        batman.meslek= ""
+        batman.yas= 80
+
+    }
 }
