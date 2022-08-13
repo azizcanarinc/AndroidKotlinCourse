@@ -48,7 +48,7 @@ class MainActivity : AppCompatActivity() {
         textView.text="Sonuç : ${toplamaSonucu}"
     }*/
     fun sinifCalismasi(){
-
+/*
         var isim ="superman"
         var meslek ="gazateci"
         var yas = 50
@@ -67,5 +67,10 @@ class MainActivity : AppCompatActivity() {
         batman.meslek= ""
         batman.yas= 80
 
+        textView.text = "Yaş : ${superman.yas}"
+*/
+        var superman = SuperKahraman("superman",50,"gazateci")
+        textView.text = "Yaş : ${superman.yas}"
     }
+    //
 }
