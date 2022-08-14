@@ -1,6 +1,20 @@
 package com.azizcanarinc.siniflarvefonksiyonlar
 
 class SuperKahraman (var isim:String,var yas:Int,var meslek :String){
+
+  private  var sacininRengi="sari"
+
+public fun testFonksiyonu(){
+    println("test")
+}
+
+fun sacRenginiAl():String{
+    return this.sacininRengi
+}
+
+
+
+
 /*
     var isim = ""
     var yas = 0

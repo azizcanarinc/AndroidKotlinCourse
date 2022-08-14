@@ -9,6 +9,22 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        button2.setOnClickListener{
+            textView2.text=("AzizCanARİNÇ")
+
+        }
+
+
+
+
+
+
+
+
+
+
+
         var j = -10
         if(j==0){
             ilkFonksiyon()
@@ -24,6 +40,7 @@ class MainActivity : AppCompatActivity() {
             textView.text="Sonuç : ${toplamaSonucu}"
 
         }
+        nullGüvenliği()
     }
     fun ilkFonksiyon(){
         println("ilk fonksiyon çalışıyor")
@@ -71,6 +88,42 @@ class MainActivity : AppCompatActivity() {
 */
         var superman = SuperKahraman("superman",50,"gazateci")
         textView.text = "Yaş : ${superman.yas}"
+        superman.testFonksiyonu()
+        //superman.sacininRengi="yeşil"
+        //println(superman.sacininRengi)
+        println(superman.sacRenginiAl())
+
     }
-    //
+
+    fun nullGüvenliği (){
+        var benimString : String?
+        benimString="Aziz"
+        var benimYasim: Int?=null
+        println(benimYasim)
+
+        //benimYasim=14
+
+
+       if (benimYasim != null){
+          var yasım = (benimYasim*2)
+           println(yasım)
+       }else{
+           println("sayı atanmamış")
+       }
+        println(benimYasim?.minus(2))
+
+
+
+        var sonuc = benimYasim?.minus(2) ?:10
+        println(sonuc)
+
+        benimYasim=5
+        benimYasim?.let {
+            println(it*5)
+        }
+
+
+
+    }
+
 }
