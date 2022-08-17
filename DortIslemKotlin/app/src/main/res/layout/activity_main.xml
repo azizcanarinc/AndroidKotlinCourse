@@ -6,89 +6,96 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <EditText
-        android:id="@+id/editText2"
-        android:layout_width="0dp"
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="221dp"
         android:layout_height="0dp"
-        android:layout_marginStart="9dp"
-        android:layout_marginEnd="9dp"
-        android:layout_marginBottom="15dp"
-        android:ems="10"
-        android:hint="İkinci Rakamı Girin"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        android:layout_marginBottom="38dp"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintTop_toBottomOf="@+id/editText2"
+        tools:visibility="visible">
+
+        <Button
+            android:id="@+id/toplama"
+            android:layout_width="53dp"
+            android:layout_height="56dp"
+            android:onClick="top"
+            android:text="+"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/toplama2"
+            android:layout_width="53dp"
+            android:layout_height="56dp"
+            android:onClick="cik"
+            android:text="-"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/carpma"
+            android:layout_width="53dp"
+            android:layout_height="56dp"
+            android:onClick="car"
+            android:text="*"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/bolme"
+            android:layout_width="53dp"
+            android:layout_height="56dp"
+            android:onClick="bol"
+            android:text="/"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="214dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="288dp"
+        android:text="Sonuc"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
     <EditText
         android:id="@+id/editText"
-        android:layout_width="0dp"
+        android:layout_width="388dp"
         android:layout_height="0dp"
-        android:layout_marginStart="9dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="9dp"
         android:layout_marginBottom="13dp"
         android:ems="10"
         android:hint="İlk Rakamı Girin"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/editText2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="194dp"
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="388dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="18dp"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
+        android:layout_marginBottom="23dp"
+        android:ems="10"
+        android:hint="İkinci Rakamı Girin"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText2">
-
-        <Button
-            android:id="@+id/toplama"
-            android:layout_width="48dp"
-            android:layout_height="56dp"
-            android:text="+"
-            android:textSize="24sp" />
-
-        <Button
-            android:id="@+id/toplama2"
-            android:layout_width="48dp"
-            android:layout_height="56dp"
-            android:text="-"
-            android:textSize="24sp" />
-
-        <Button
-            android:id="@+id/çarpma"
-            android:layout_width="48dp"
-            android:layout_height="56dp"
-            android:text="*"
-            android:textSize="24sp" />
-
-        <Button
-            android:id="@+id/bölme"
-            android:layout_width="48dp"
-            android:layout_height="56dp"
-            android:text="/"
-            android:textSize="24sp" />
-    </LinearLayout>
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="190dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="304dp"
-        android:text="Sonuc"
-        android:textAlignment="center"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
