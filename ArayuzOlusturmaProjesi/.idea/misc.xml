@@ -3,7 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/azizarinc/Documents/GitHub/AndroidKotlinCourse/ArayuzOlusturmaProjesi/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/azizarinc/Documents/GitHub/AndroidKotlinCourse/ArayuzOlusturmaProjesi/app/src/main/res/layout-land/activity_main.xml" value="0.10729166666666666" />
+        <entry key="..\:/Users/azizarinc/Documents/GitHub/AndroidKotlinCourse/ArayuzOlusturmaProjesi/app/src/main/res/layout/activity_main.xml" value="0.22" />
       </map>
     </option>
   </component>
