@@ -12,11 +12,33 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        println("onCrate çağırıldı")
     }
-    fun AktiviteDegistir(view: View){
-        var kullaniciverisi=editText.text.toString()
-        val intent =Intent(applicationContext,IkinciAktivitem::class.java)
-        intent.putExtra("yollananVari",kullaniciverisi)
-        startActivity(intent)
+
+    override fun onStart() {
+        super.onStart()
+        println("onStart çağırıldı")
     }
+
+    override fun onResume() {
+        super.onResume()
+        println("onResume çağırıldı")
+    }
+
+    override fun onPause() {
+        super.onPause()
+        println("onPause çağırıldı")
+    }
+
+    override fun onStop() {
+        super.onStop()
+        println("onStop çağırıldı")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        println("onDestroy çağırıldı")
+    }
+
+
 }

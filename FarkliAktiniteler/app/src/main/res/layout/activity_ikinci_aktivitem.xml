@@ -7,11 +7,11 @@
     tools:context=".IkinciAktivitem">
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="252dp"
-        android:layout_height="56dp"
-        android:layout_marginTop="128dp"
-        android:text="İkinci Aktivitem"
+        android:id="@+id/textView"
+        android:layout_width="286dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="146dp"
+        android:text="İKİNCİ AKTİVİTE"
         android:textAlignment="center"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"

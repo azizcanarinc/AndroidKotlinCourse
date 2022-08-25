@@ -8,8 +8,4 @@ class IkinciAktivitem : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_ikinci_aktivitem)
-        val intent = intent
-        val alinanveri=intent.getStringExtra("yollananVeri")
-        textView2.text=alinanveri
     }
-}
