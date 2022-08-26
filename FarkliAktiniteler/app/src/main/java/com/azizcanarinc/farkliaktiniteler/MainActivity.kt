@@ -12,6 +12,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        println("sa")
         println("onCrate çağırıldı")
     }
 
@@ -40,5 +41,8 @@ class MainActivity : AppCompatActivity() {
         println("onDestroy çağırıldı")
     }
 
-
+fun AktiviteDegistir (view:View){
+val intent=Intent(applicationContext,IkinciAktivitem::class.java)
+    startActivity(intent)
+}
 }
