@@ -44,5 +44,6 @@ class MainActivity : AppCompatActivity() {
 fun AktiviteDegistir (view:View){
 val intent=Intent(applicationContext,IkinciAktivitem::class.java)
     startActivity(intent)
+    finish()
 }
 }

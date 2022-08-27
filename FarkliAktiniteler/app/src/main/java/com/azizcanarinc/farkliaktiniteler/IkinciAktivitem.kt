@@ -12,7 +12,8 @@ class IkinciAktivitem : AppCompatActivity() {
         setContentView(R.layout.activity_ikinci_aktivitem)
     }
     fun AktiviteDegistir (view: View){
-        val intent= Intent(applicationContext,IkinciAktivitem::class.java)
+        val intent= Intent(applicationContext,MainActivity::class.java)
         startActivity(intent)
+        finish()
     }
 }
