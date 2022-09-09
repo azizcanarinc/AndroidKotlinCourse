@@ -32,6 +32,10 @@ class MainActivity : AppCompatActivity() {
         }
     }
     fun sil (view: View){
+        alinanKullaniciAdi=sharedPreferences.getString("kullanici","")
+        if (alinanKullaniciAdi != null )
+            textView.text="Kaydedilen Kullanıcı Adı : "
+        sharedPreferences.edit().remove("kullanici").apply()
 
     }
 }
