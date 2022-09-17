@@ -32,6 +32,8 @@ class MainActivity : AppCompatActivity() {
         superKahramanGorselleri.add(FlashBitmap)
         superKahramanGorselleri.add(İronmanBitmap)
 
+        val adapter = RecyclerAdapter(superKahramanIsimleri,superKahramanGorselleri)
+
 
 
     }

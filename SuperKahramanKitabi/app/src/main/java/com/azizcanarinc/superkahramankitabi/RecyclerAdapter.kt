@@ -1,10 +1,13 @@
 package com.azizcanarinc.superkahramankitabi
 
+import android.graphics.Bitmap
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import java.util.ArrayList
+import kotlin.collections.ArrayList
 
-class RecyclerAdapter : RecyclerView.Adapter<RecyclerAdapter.SuperKahramanVH>() {
+class RecyclerAdapter(val kahramanListesi : ArrayList<String>,val kahramanGorselleri : ArrayList<Bitmap>) : RecyclerView.Adapter<RecyclerAdapter.SuperKahramanVH>() {
     class SuperKahramanVH(itemView:View) : RecyclerView.ViewHolder(itemView) {
 
     }
@@ -13,8 +16,8 @@ class RecyclerAdapter : RecyclerView.Adapter<RecyclerAdapter.SuperKahramanVH>() 
 
     }
     override fun getItemCount(): Int {
+        return kahramanListesi.size
 
-        
     }
 
 
