@@ -24,9 +24,9 @@
 
         <TextView
             android:id="@+id/textView"
-            android:layout_width="220dp"
+            android:layout_width="260dp"
             android:layout_height="66dp"
-            android:layout_marginLeft="95dp"
+            android:layout_marginLeft="75dp"
             android:layout_marginTop="40dp"
             android:text="Aquaman"
             android:textAlignment="center"

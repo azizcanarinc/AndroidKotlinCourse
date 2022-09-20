@@ -6,8 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.recycler_row.*
-import java.util.ArrayList
+import kotlin.collections.ArrayList
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         superKahramanIsimleri.add("Aquaman")
         superKahramanIsimleri.add("Flash")
         superKahramanIsimleri.add("İronman")
-
+/*
         val BaydirmanBitmap =BitmapFactory.decodeResource(applicationContext.resources,R.drawable.indir)
         val SpidermanBitmap =BitmapFactory.decodeResource(applicationContext.resources,R.drawable.omgec)
         val AquamanBitmap =BitmapFactory.decodeResource(applicationContext.resources,R.drawable.images)
@@ -35,13 +34,32 @@ class MainActivity : AppCompatActivity() {
         superKahramanGorselleri.add(FlashBitmap)
         superKahramanGorselleri.add(İronmanBitmap)
 
+ */
+
+        val baydirmanDrawableId = R.drawable.indir
+        val spidermanDrawableId = R.drawable.omgec
+        val aquamanDrawableId = R.drawable.images
+        val flashDrawableId = R.drawable.flash
+        val ironmanDrawableId = R.drawable.iron
+
+        var superKahramanDrawableListesi = ArrayList<Int>()
+        superKahramanDrawableListesi.add(baydirmanDrawableId)
+        superKahramanDrawableListesi.add(spidermanDrawableId)
+        superKahramanDrawableListesi.add(aquamanDrawableId)
+        superKahramanDrawableListesi.add(flashDrawableId)
+        superKahramanDrawableListesi.add(ironmanDrawableId)
+
+
+
+
+
 
 
         val layoutManager = LinearLayoutManager(this)
         recyclerView.layoutManager =layoutManager
 
 
-        val adapter = RecyclerAdapter(superKahramanIsimleri,superKahramanGorselleri)
+        val adapter = RecyclerAdapter(superKahramanIsimleri,superKahramanDrawableListesi)
         recyclerView.adapter = adapter
 
 
