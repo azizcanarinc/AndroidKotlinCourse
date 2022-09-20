@@ -1,5 +1,6 @@
 package com.azizcanarinc.superkahramankitabi
 
+import android.content.Intent
 import android.graphics.Bitmap
 import android.view.LayoutInflater
 import android.view.View
@@ -30,7 +31,13 @@ val itemView=LayoutInflater.from(parent.context ).inflate(R.layout.recycler_row,
     override fun onBindViewHolder(holder: SuperKahramanVH, position: Int) {
 
         holder.itemView.recyclerViewTextView.text=kahramanListesi.get(position)
-
+        holder.itemView.setOnClickListener{
+            val intent = Intent(holder.itemView.context,TanitimActivity::class.java)
+            intent.putExtra("superKahramanIsmi",kahramanListesi.get(position))
+            val singleton = SingletonClass.secilenKahraman
+            singleton.gorsel=kahramanGorselleri.get(position)
+            holder.itemView.context.startActivity(intent)
+        }
     }
 
 
