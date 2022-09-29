@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity() {
         superKahramanIsimleri.add("Aquaman")
         superKahramanIsimleri.add("Flash")
         superKahramanIsimleri.add("İronman")
+        superKahramanIsimleri.add("ninja kedi")
 /*
         val BaydirmanBitmap =BitmapFactory.decodeResource(applicationContext.resources,R.drawable.indir)
         val SpidermanBitmap =BitmapFactory.decodeResource(applicationContext.resources,R.drawable.omgec)
@@ -41,6 +42,7 @@ class MainActivity : AppCompatActivity() {
         val aquamanDrawableId = R.drawable.images
         val flashDrawableId = R.drawable.flash
         val ironmanDrawableId = R.drawable.iron
+        val ninjaDrawableId = R.drawable.kedi
 
         var superKahramanDrawableListesi = ArrayList<Int>()
         superKahramanDrawableListesi.add(baydirmanDrawableId)
@@ -48,7 +50,7 @@ class MainActivity : AppCompatActivity() {
         superKahramanDrawableListesi.add(aquamanDrawableId)
         superKahramanDrawableListesi.add(flashDrawableId)
         superKahramanDrawableListesi.add(ironmanDrawableId)
-
+        superKahramanDrawableListesi.add(ninjaDrawableId)
 
 
 
