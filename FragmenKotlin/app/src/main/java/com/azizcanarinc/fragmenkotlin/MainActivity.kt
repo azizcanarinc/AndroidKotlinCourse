@@ -15,16 +15,25 @@ class MainActivity : AppCompatActivity() {
 
 
     }
-    fun ilkFragment (view:View){
+    fun firstFragment (view:View){
 
         val fragmentManager = supportFragmentManager
         val fragmentTransaction = fragmentManager.beginTransaction()
 
-        val ilkFragment = BlankFragment()
-        fragmentTransaction.add(R.id.frameLayout,firstF)
+        val firstFragment = BlankFragment()
+        fragmentTransaction.add(R.id.frameLayout,firstFragment).commit()
 
     }
-    fun ikinciFragment(view:View){
+    fun secondFragment(view:View){
+
+        val fragmentManager = supportFragmentManager
+        val fragmentTransaction = fragmentManager.beginTransaction()
+
+        val secondFragment = BlankFragment2()
+        fragmentTransaction.add(R.id.frameLayout,secondFragment).commit()
+
+
+
 
     }
 
