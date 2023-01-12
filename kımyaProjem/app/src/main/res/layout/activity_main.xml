@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="411dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="24dp"
+        android:text="guruplar ve özellikleri"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="#FF2600"
+        android:textSize="37sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="500dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="348dp"
+            android:layout_height="108dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="26dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/gurup1"
+                android:layout_width="142dp"
+                android:layout_height="84dp"
+                android:layout_marginTop="20dp"
+                android:onClick="gurup11"
+                android:text="1A gurubu"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/gurup2"
+                android:layout_width="142dp"
+                android:layout_height="84dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="20dp"
+                android:text="2A gurubu"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="348dp"
+            android:layout_height="108dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/gurup3"
+                android:layout_width="142dp"
+                android:layout_height="84dp"
+                android:layout_marginTop="20dp"
+                android:text="3A gurubu"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/gurup4"
+                android:layout_width="142dp"
+                android:layout_height="84dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="20dp"
+                android:text="4A gurubu"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="348dp"
+            android:layout_height="108dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="26dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/gurup5"
+                android:layout_width="142dp"
+                android:layout_height="84dp"
+                android:layout_marginTop="20dp"
+                android:text="5A gurubu"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/gurup6"
+                android:layout_width="142dp"
+                android:layout_height="84dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="20dp"
+                android:text="6A gurubu"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="348dp"
+            android:layout_height="108dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/gurup7"
+                android:layout_width="142dp"
+                android:layout_height="84dp"
+                android:layout_marginTop="20dp"
+                android:text="7A gurubu"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/gurup8"
+                android:layout_width="142dp"
+                android:layout_height="84dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="20dp"
+                android:text="8A gurubu"
+                android:textSize="24sp" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
