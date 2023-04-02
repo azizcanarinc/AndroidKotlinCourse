@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-
-
+    //A/libc: Fatal signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x0 in tid 8437 (FinalizerDaemon), pid 8411 (tariflerisqlite)
+    //E/System: Uncaught exception thrown by finalize
 }
 
