@@ -14,12 +14,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.content.ContextCompat
 import androidx.navigation.Navigation
 import kotlinx.android.synthetic.main.fragment_tarif.*
 import java.io.ByteArrayOutputStream
-import java.util.jar.Manifest
+
 //E/SQLiteLog: (1) no such table: yemekler in "INSERT INTO yemekler (yemekismi, yemekmalzemesi, gorsel)VALUES (?,?,?)"
 //E/SQLiteLog: (1) no such table: yemekler in "SELECT*FROM yemekler"
 
@@ -48,7 +47,7 @@ class TarifFragment : Fragment() {
             kaydet(it)
         }
         imageView.setOnClickListener {
-            gorselsec(it)
+            gorselsec()
         }
     }
 
@@ -88,7 +87,7 @@ class TarifFragment : Fragment() {
 
     }
 
-    fun gorselsec(view: View) {
+    fun gorselsec() {
 
         activity?.let {
             if (ContextCompat.checkSelfPermission(it.applicationContext,android.Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
