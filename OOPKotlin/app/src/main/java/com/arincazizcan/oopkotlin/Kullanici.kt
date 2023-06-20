@@ -1,6 +1,6 @@
 package com.arincazizcan.oopkotlin
 
-class Kullanici {
+class Kullanici : Insan {
     var isim: String? = null
     var yas : Int? = null
 

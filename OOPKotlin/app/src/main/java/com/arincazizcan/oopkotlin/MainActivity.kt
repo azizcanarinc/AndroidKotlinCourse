@@ -24,10 +24,46 @@ class MainActivity : AppCompatActivity() {
 
         println("-------Inhereritance-------")
 
+        val eymen = OzelSanatci("Eymen",0,"ressam")
+        eymen.sarkiSoyle()
 
+        println("-------Polymorphism-------")
 
+        //Statik Polymorphism
 
+        val islem = Islemler()
+        println(islem.carpma())
+        println(islem.carpma(1,3))
+        println(islem.carpma(2,3,4))
+
+        //Dinamik Polymorphism
+        val kedi = Hayvan()
+        kedi.sesCikar()
+        val pasa =Kopek()
+        pasa.sesCikar()
+        pasa.kopekFonksiyonu()
+
+        println("-------Abstraction & Interface-------")
+
+        kullanici.insanFonksiyonu()
+        var gitar =Gitar()
+        gitar.marka="gitar markası"
+        gitar.elektro=true
+        gitar.bilgi()
+        var a = gitar.oda
+        println(a)
+
+        println("-------Lambda Gösterimleri-------")
+yazdigimiYazdir("test")
+        val yazdigimiYazdirLambda= { verilenString : String -> println(verilenString)}
+        yazdigimiYazdirLambda("test lambda")
+         val yazıLambda={a:String,b:String -> println(a+b)}
+        yazıLambda("azi","z")
+        val carpmaLambda ={a:Int,b:Int -> a*b}
+        println(carpmaLambda(3,9999))
 
     }
-
+fun yazdigimiYazdir(String:String){
+    println(String)
+}
 }
